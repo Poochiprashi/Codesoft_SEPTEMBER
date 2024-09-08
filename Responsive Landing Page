@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <title>Document</title>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+}
+#top{
+    width: 100%;
+    min-height: 60vh;
+    background-image: url('https://th.bing.com/th/id/OIP.7VacqYj1Mexy3eptsloijAHaEv?rs=1&pid=ImgDetMain');
+    background-size: cover;
+    background-position: center;
+}
+#bottom{
+    width: 100%;
+    min-height: 40vh;
+    display: flex;
+}
+#overlay{ 
+    position: relative;
+    width: 100%;
+    min-height: inherit;
+    background-color: rgba(0, 0, 0, 0.626);
+}
+#text{
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    bottom: 20%;
+    color: white;
+    padding: 0 10vh;
+    display: flex;
+    justify-content: space-between;
+}
+#textright{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#textright p{
+    font-size: 10px;
+    width: 30%;
+}
+#textright i{
+    color: white;
+}
+#text h1{
+    font-size: 6vw;
+    font-weight: 500;
+}
+#bottom #b1{
+    padding: 20px;
+    width: 25%;
+    min-height: inherit;
+    background-color: white;
+}
+#bottom p{
+    font-size: 12px;
+    margin-top: 20px;
+
+}
+#bottom #b2{
+    width: 33.3%;
+    min-height: inherit;
+    background-image: url('https://images.unsplash.com/photo-1570331324373-ac70b039d105?q=80&w=1962&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+}
+#bottom #b3{
+    width: 25%;
+    min-height: inherit;
+    background-color: rgb(171, 226, 43);
+}
+#bottom #b3 #b31{
+    
+    width: 100%;
+    min-height:20vh;
+    padding: 20px;
+    color: white;
+    background-color:  rgb(226, 150, 43);
+}
+#b31 p{
+    margin-top: 10px;
+    font-size: 12px;
+}
+#bottom #b3 #b32{
+    width: 132.5%;
+    min-height: 30vh;
+    background-image: url('https://images.unsplash.com/photo-1604085572504-a392ddf0d86a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+}
+
+#bottom #b4{
+    width: 20.5%;
+    min-height: inherit;
+    padding: 30px;
+    background-color: #444;
+    color: white;
+}
+.notf{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.notf #photo{
+    width: 40px;
+    min-height: 40px;
+    background-image: url('https://i.pinimg.com/originals/8b/1b/69/8b1b69d1040e436b029106cd6eb80bf0.jpg');
+    border-radius: 50%;
+    background-size: cover;
+
+}
+.notf p{
+    width: 80%;
+    font-size: 12px;
+
+}
+@media(max-width:500px){
+    #overlay #text{
+        
+        flex-direction: column;
+        align-items:flex-start ;
+    }
+    #bottom{
+        min-height: 20vh;
+    }
+    #overlay #text #textright{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+#overlay #text #textright p{
+    width: initial;
+    margin-top: 20px;
+} 
+#overlay #text #textright #icons{
+    margin-top: 30px;
+
+}
+#text h1{
+    font-size:10vw ;
+}
+#bottom{
+    flex-direction: column;
+}
+#b1{
+    width: 100%;
+}
+#b2{
+    width: 100%;
+}
+#b3{
+    flex-direction: column;
+    width: 100%;
+}
+#b4{
+    width: 100%;
+}
+}
+   
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div id="top">
+            <div id="overlay">
+                <div id="text">
+                    <h1> Noise.</h1>
+                    <div id="textright">
+                        <p> Remix Icon is a set of open source neutral style system symbols elaborately crafted for designers and developers. All of the icons are free to use for both personal and commercia</p>
+                        <p>RemixIcon is a set of 2800+ icons for designers and developers, with SVG and PNG formats, webf a</p>
+                        <div id="icons">
+                            <i class="ri-twitter-fill"></i>
+                            <i class="ri-instagram-fill"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div id="bottom">
+            <div id="b1">
+                <h2>Latest</h2>
+                <p>oiiiiiiii how are you</p>
+            </div>
+            <div id="b2"></div>
+            <div id="b3">
+                <div id="b31">
+                    <h2>Alerts</h2>
+                    <p>savdhaan aage khatra hai</p>
+                </div>
+                <div id="b32"></div>
+            </div>
+            <div id="b4">
+                <h3>latest</h3>
+                <div class="notf">
+                    <div id="photo"></div>
+                    <p>hi how are you</p>
+                   
+                </div>
+                <div class="notf">
+                    <div id="photo"></div>
+                    <p>hi how are you</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
