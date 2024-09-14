@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tribute</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(208, 227, 244);
+            border: 10px solid black;
+            display: flex;
+            justify-content: center;
+
+        }
+        .content{
+            
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .top-section{
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        h1{
+            font-size: 40px;
+            text-transform: uppercase;
+            font-weight: 800;
+        }
+        h4{
+            
+            font-size: 20px;
+           text-align: end;
+        }
+        .image-container{
+            border-radius: 50%;
+            overflow: hidden;
+            
+        }
+        .image-container,
+        img{
+            width: 200px;
+            height: 220px;
+        }
+        .about-section{
+            margin-top: 20px;
+        }
+        .about-section h2{
+            font-size: 30px;
+            font-weight:900;
+            margin-bottom: 20px;
+        }
+        .about-section p{
+            font-size: 20px;
+            text-align: justify;
+        }
+        .biography-section{
+            margin: 20px 0 ;
+        }
+        .biography-section h3{
+            margin-bottom: 15px;
+
+        }
+        .biography-section ul{
+            margin-left: 50px;
+        }
+        .biography-section li {
+            margin-left: 10px;
+
+        }
+        footer{
+            margin: 15px 0;
+            text-align: end;
+        }
+        
+    </style>
+</head>
+<body>
+   <div class="main">
+    <div class="content">
+        <section class="top-section">
+            <div class="image-container">
+                <img src="https://th.bing.com/th/id/OIP.FSErhd0oTuvbPtK3KhPjPgHaG5?w=173&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="tribute">
+            </div>
+            <div>
+                <h1>Sardar Vallabhbhai Patel</h1>
+                <h4>1875-1950</h4>
+            </div>
+        </section>
+        <section class="about-section">
+            <h2>IRON MAN OF INDIA</h2>
+            <p><b>Vallabhbhai Patel, known as Sardar Patel,</b> (born Oct. 31, 1875, Nadiad, Gujarat, India—died Dec. 15, 1950, Bombay), Indian statesman. Educated in India, he set up his own law office in 1900 and later studied law in Britain; he did not become involved in politics until 1917. Like Mohandas K. Gandhi (and unlike Jawaharlal Nehru), he advocated dominion status within the British Commonwealth rather than independence for India. He opposed armed struggle on practical rather than moral grounds, and he was not interested in Hindu-Muslim unity. Patel was repeatedly a candidate for the presidency of the Indian National Congress, but his uncompromising attitude toward the Indian Muslims cost him Gandhi’s support and, ultimately, the presidency. After Indian independence (1947), he held several cabinet positions. He is remembered for achieving the peaceful integration of the princely Indian states into the Indian union and the political unification of India.</p>
+
+        </section>
+        <section class="biography-section">
+            <h3> BIOGRAPHY</h3>
+            <ul>
+                <li>Sardar Vallabhbhai Patel – As Deputy Prime Minister and Home Minister.</li>
+                <li>Sardar Vallabhbhai Patel’s role in the Integration of the princely states.</li>
+                <li>Sardar Vallabhbhai Patel’s role in the Indian Freedom Movement.</li>
+                <li>Sardar Vallabhbhai Patel as Congress President.</li>
+
+            </ul>
+
+        </section>
+        <footer><p>Read More about Sardar Vallabhbhayi Patel on <a href="https://en.wikipedia.org/wiki/Vallabhbhai_Patel">Wikipedia.</a></p></footer>
+    </div>
+   </div>
+
+</body>
+</html>
