@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+  //css part
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    /* background-color: grey; */
+    background-image:linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)), url('https://i.pinimg.com/736x/e8/18/69/e81869c40f1d243afb0f857a10f4e18d.jpg');
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+
+
+}
+.calculator{
+    padding: 80px;
+    border-radius: 10px;
+    background-color: rgba(111, 66, 66, 0.497);
+    box-shadow: 0px 3px 15px rgba(113,115,119,0.5);
+}
+input{
+    padding: 8px;
+    width: 100%;
+    border: none;
+    box-shadow: 0px 3px 15px rgbs(84,84,84,0.1);
+    
+    text-align: right;
+    cursor: pointer;
+    font-size: 20px;
+    
+    
+   
+   
+}
+button{
+   color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 70px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: larger;
+
+   
+
+
+} 
+.operators{
+    color: green;
+}
+.operators1{
+    color: green;
+    background-color: chartreuse;
+}
+
+    
+    
+
+    
+
+    </style>
+</head>
+      //HTML part
+<body>
+    <div class="calculator">
+        <input type="text" placeholder="0" id="inputbox">
+        <div>
+            <button class="operators">AC</button>
+            <button class="operators">DEL</button>
+            <button class="operators">%</button>
+            <button class="operators">/</button>
+        </div>
+        <div>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button class="operators">*</button>
+        </div>
+        <div>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button class="operators">-</button>
+        </div>
+        <div>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button class="operators">+</button>
+        </div>
+        <div>
+            <button>0</button>
+            <button>00</button>
+            <button>.</button>
+            <button class="operators1">=</button>
+        </div>
+    </div>
+      //Java script part
+    <script>
+        let input=document.getElementById('inputbox');
+        let buttons =document.querySelectorAll ('button');
+        let string="";
+        let arr=Array.from(buttons);
+        arr.forEach(button=>{
+            button.addEventListener('click',(e)=>{
+                if(e.target.innerHTML=='='){
+                    string=eval (string);
+                    input.value=string;
+                }
+                else if(e.target.innerHTML=='AC'){
+                    string="";
+                    input.value=string;
+                }
+                else if(e.target.innerHTML=='DEL'){
+                    string=string.substring(0,string.length-1);
+                    input.value=string;
+                    
+                }
+
+                
+                else{
+
+
+                string += e.target.innerHTML;
+                input.value=string;
+                }
+            })
+
+        })
+    </script>
+    
+</body>
+</html>
